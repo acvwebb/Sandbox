@@ -17,8 +17,8 @@ print html
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 print root
-print root.cssselect("div[align='left']")
 selectstuff = root.cssselect("a")
+print selectstuff
 for i in selectstuff: 
    print i.text
    print i.attrib['href']
