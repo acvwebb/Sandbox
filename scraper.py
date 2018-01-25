@@ -18,9 +18,10 @@ print html
 root = lxml.html.fromstring(html)
 print root
 root.cssselect("div[align='left']")
-print selectstuff
+print select
 
 Listylist = ["p1","p2","p3"]
+Print listylist
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
