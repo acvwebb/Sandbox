@@ -17,7 +17,11 @@ print html
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 print root
-print root.cssselect("a")
+print root.cssselect("div[align='left']")
+selectstuff = root.cssselect("a")
+for i in selectstuff: 
+   print i.text
+   print i.attrib['href']
 
 urltoscrape = "http://site.com/"
 Listylist = ["p1","p2","p3"]
@@ -27,6 +31,7 @@ for blah in Listylist:
    fullurl = urltoscrape + blah 
    print fullurl 
  
+
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
