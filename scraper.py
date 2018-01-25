@@ -3,7 +3,7 @@
 # Import the scraper wiki library to store data 
 
 import scraperwiki
-# import lxml.html
+import lxml.html
 
 print "Hello World" 
 myname="Amelia"
