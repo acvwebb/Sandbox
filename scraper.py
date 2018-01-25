@@ -17,7 +17,7 @@ print html
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 print root
-print root.cssselect("div[align='left']")
+print root.cssselect("a")
 
 urltoscrape = "http://site.com/"
 Listylist = ["p1","p2","p3"]
