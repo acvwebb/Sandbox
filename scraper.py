@@ -11,7 +11,7 @@ print myname
 
 #
 # # Read in a page
-html = scraperwiki.scrape("http://asos.com")
+html = scraperwiki.scrape("http://foo.com")
 print html
 #
 # # Find something on the page using css selectors
