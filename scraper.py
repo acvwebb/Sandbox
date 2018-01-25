@@ -6,6 +6,8 @@ import scraperwiki
 # import lxml.html
 
 print "Hello World" 
+myname="Amelia"
+print myname
 
 #
 # # Read in a page
